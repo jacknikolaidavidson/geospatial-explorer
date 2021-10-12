@@ -7,8 +7,7 @@ Demo geospatial application in Python to provide interactivity throughout the pr
 - `python3 -m virtualenv env`
 - `. env/bin/activate`
 - `pip install -r requirements.txt`
-- `streamlit run app.py`
+- `streamlit run application.py`
 - (optional) streamlit run pydeckapp.py --server.port=8081
 - (optional) streamlit run application.py --server.port=8082
 - (optional) port forward appropriate port through local VSCode 
-    - ![Port Forward Example](./port_forward.JPG)

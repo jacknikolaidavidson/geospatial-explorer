@@ -1,0 +1,6 @@
+streamlit==0.85.1
+requests
+shapely
+pyproj
+rasterio
+altair
