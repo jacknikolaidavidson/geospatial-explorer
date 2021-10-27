@@ -11,8 +11,10 @@ app = MultiPage()
 # st.title("Data Storyteller Application")
 
 # Add all your applications (pages) here
-app.add_page("Ground cover", pydeckapp.app)
-app.add_page("Fractional cover", fractional_cover.app)
+app.add_page("Fractional cover", pydeckapp.app)
+app.add_page("Other cover", fractional_cover.app)
+
+
 
 
 # The main app

@@ -37,9 +37,9 @@ def app():
     ur = [urx,ury]
     lr = [urx,lly]
 
-
+# https://geoserver.tern.org.au/geoserver/aus/wms?service=WMS&version=1.1.0&request=GetMap&layers=aus:fractional_cover&styles=&bbox=-1944645.0,-4910195.0,2299785.0,-855425.0&width=768&height=733&srs=EPSG:3577&format=image/vnd.jpeg-png8
     IMG_URL = 'https://geoserver.tern.org.au/geoserver/aus/wms?service=WMS&version=1.1.0&request=GetMap&layers=aus:fractional_cover&styles=&bbox=146.2170658,-20.2191192,146.4817976,-20.0690283&width=768&height=733&srs=EPSG:4326&format=image/vnd.jpeg-png8'
-    urlp = 'https://geoserver.tern.org.au/geoserver/aus/wms?service=WMS&version=1.1.0&request=GetMap&layers=aus:ground_cover&styles=&bbox='
+    urlp = 'https://geoserver.tern.org.au/geoserver/aus/wms?service=WMS&version=1.1.0&request=GetMap&layers=aus:fractional_cover&styles=&bbox='
     urlbb = str(llx)+','+str(lly)+','+str(urx)+','+str(ury)
     urls = '&width=768&height=733&srs=EPSG:4326&format=image/vnd.jpeg-png8&time='
 
@@ -50,7 +50,7 @@ def app():
 
 
 
-    st.title("Birds eye view")
+    st.title("Geospatial explorer")
     st.header("Ground cover comparison")
 
     # TODO: Working shortening of date picker, just slow
@@ -67,7 +67,7 @@ def app():
     # st.write(sdate)
 
 
-    col1, col2 = st.beta_columns(2)
+    col1, col2 = st.columns(2)
 
     with col1:
         sdate = st.selectbox(

@@ -16,7 +16,7 @@ def app():
         "ury" : -20.0690283,
     }
 
-    st.sidebar.header("Parameters")
+    st.sidebar.header("Input parameters")
 
 
 
@@ -39,7 +39,7 @@ def app():
 
 
     IMG_URL = 'https://geoserver.tern.org.au/geoserver/aus/wms?service=WMS&version=1.1.0&request=GetMap&layers=aus:fractional_cover&styles=&bbox=146.2170658,-20.2191192,146.4817976,-20.0690283&width=768&height=733&srs=EPSG:4326&format=image/vnd.jpeg-png8'
-    urlp = 'https://geoserver.tern.org.au/geoserver/aus/wms?service=WMS&version=1.1.0&request=GetMap&layers=aus:ground_cover&styles=&bbox='
+    urlp = 'https://geoserver.tern.org.au/geoserver/aus/wms?service=WMS&version=1.1.0&request=GetMap&layers=aus:fractional_cover&styles=&bbox='
     urlbb = str(llx)+','+str(lly)+','+str(urx)+','+str(ury)
     urls = '&width=768&height=733&srs=EPSG:4326&format=image/vnd.jpeg-png8&time='
 
@@ -50,8 +50,8 @@ def app():
 
 
 
-    st.title("Birds eye view")
-    st.header("Ground cover comparison")
+    st.title("Geospatial explorer")
+    st.header("Seasonal fractional cover comparison")
 
     # TODO: Working shortening of date picker, just slow
     # DD=[]
@@ -282,5 +282,5 @@ def app():
     # test = ((float(urx)-float(llx))*.5)+float(llx)
 
 
-    st.write(IMG_URL+sdate)
-    st.write(IMG_URL+edate)
+    # st.write(IMG_URL+sdate)
+    # st.write(IMG_URL+edate)
