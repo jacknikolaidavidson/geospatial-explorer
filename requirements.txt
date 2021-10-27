@@ -1,6 +1,9 @@
-streamlit==0.85.1
+
+streamlit
 requests
 shapely
-pyproj
+# pyproj
 rasterio
 altair
+numpy
+pandas
