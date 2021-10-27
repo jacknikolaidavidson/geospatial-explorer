@@ -1,0 +1,13 @@
+name: py37
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  - numpy=1.9.*
+  - pandas
+  - streamlit
+  - requests
+  - shapely
+  - pyproj
+  - rasterio
+  - altair
